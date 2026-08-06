@@ -33,7 +33,7 @@ librechat:
     # Required Values:
     # - MEILI_MASTER_KEY
   existingSecretName: "librechat-credentials-env"
-  
+
   # For adding a custom config yaml-file you can set the contents in this var. See https://www.librechat.ai/docs/configuration/librechat_yaml/example
   # configYamlContent: ""
   configYamlContent: |
@@ -88,7 +88,7 @@ librechat:
     enabled: true
     size: 10G
     accessModes: ReadWriteOnce
-    # storageClassName: 
+    # storageClassName:
 
 # only lite RAG is supported
 librechat-rag-api:
@@ -231,7 +231,7 @@ mongodb:
   extraEnvVars:
     - name: MONGODB_DATA_DIR
       value: /bitnami/mongodb
-#  persistence: 
+#  persistence:
 #    size: 8Gi
 
 
